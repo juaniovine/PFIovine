@@ -71,7 +71,20 @@
    color:#fde8e9;
   }
   /*proyectos*/
-
+  .diseno {
+    &01 {
+        transform: translateX(0%);
+    }
+    &02 {
+        transform: translateX(0%);
+    }
+    &03 {
+        transform: translateX(0%);
+    }
+    &04 {
+        transform: translateX(0%);
+    }
+}
   /*galeria*/
   .justify-content-start {
     font-size: small;

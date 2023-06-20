@@ -522,6 +522,18 @@ ol, ul {
     color: #fde8e9;
   }
   /*proyectos*/
+  .diseno01 {
+    transform: translateX(0%);
+  }
+  .diseno02 {
+    transform: translateX(0%);
+  }
+  .diseno03 {
+    transform: translateX(0%);
+  }
+  .diseno04 {
+    transform: translateX(0%);
+  }
   /*galeria*/
   .justify-content-start {
     font-size: small;
