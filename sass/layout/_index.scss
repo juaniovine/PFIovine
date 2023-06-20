@@ -31,7 +31,7 @@
     border-radius: 10px;
     @include box-shadow;
     overflow: hidden;
-    transition: 1s;
+    transition: 0.6s;
     &:hover{
       transform: scale(1.1);
     }
@@ -54,9 +54,9 @@
   .middle-right {
     background-color: #fde8e9;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px grey;
+    @include box-shadow;
     overflow: hidden;
-    transition: 1s;
+    transition: 0.6s;
     &:hover{
       transform: scale(1.1);
     }
@@ -115,7 +115,7 @@
     border-radius: 10px;
     @include box-shadow;
     overflow: hidden;
-    transition: 1s;
+    transition: 0.6s;
     &:hover{
       transform: scale(1.1);
     }

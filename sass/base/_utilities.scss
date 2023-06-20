@@ -5,13 +5,6 @@
     padding: 10px;
 }
 
-.project-text {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
 .project-box {
     width: 350px;
     height: auto;
@@ -20,9 +13,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 25px;
+    margin: 25px;
 }
 
+.project-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 // MIXIN
 

@@ -26,6 +26,10 @@
   --bs-btn-disabled-border-color: #a8847c;
 }
 
+.nav-link {
+  transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out
+}
+
 /* reset estilos CSS */
 * {
     margin: 0;

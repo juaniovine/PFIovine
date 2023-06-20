@@ -1,11 +1,29 @@
+// Proyectos
+
 .diseno {
     &01 {
+        animation-name: animation-left;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-duration: 2s;
     }
     &02 {
+        animation-name: animation-right;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-duration: 2s;
     }
     &03 {
+        animation-name: animation-left;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-duration: 3s;
     }
     &04 {
+        animation-name: animation-right;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-duration: 3s;
     }
 }
 
@@ -22,7 +40,6 @@
 }
 
 .construcciones {
-    @extend .project-text;
     &01 {
     }
     &02 {
@@ -41,5 +58,27 @@
     &03 {
     }
     &04 {
+    }
+}
+
+// Keyframes
+
+@keyframes animation-left {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-right {
+    0% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
