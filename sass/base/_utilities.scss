@@ -1,8 +1,27 @@
 // Extend
 
+.us-left {
+    width: 500px;
+    padding: 10px;
+}
 
+.project-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+}
 
-
+.project-box {
+    width: 350px;
+    height: auto;
+    background-color: $project-box-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
 
 
 // MIXIN

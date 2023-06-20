@@ -57,6 +57,29 @@ header {
   z-index: 10;
 }
 
+.us-left, .valores-left, .vision-left, .mision-left {
+  width: 500px;
+  padding: 10px;
+}
+
+.project-text, .control-calidad, .construcciones, .planificacion, .diseno {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project-box, .control-calidad04, .control-calidad03, .control-calidad02, .control-calidad01, .construcciones04, .construcciones03, .construcciones02, .construcciones01, .planificacion04, .planificacion03, .planificacion02, .planificacion01, .diseno04, .diseno03, .diseno02, .diseno01 {
+  width: 350px;
+  height: auto;
+  background-color: #fff3f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
 /* menu de navegacion */
 .menu {
   display: flex;
@@ -274,11 +297,6 @@ footer {
   padding: 30px;
 }
 
-.mision-left {
-  width: 500px;
-  padding: 10px;
-}
-
 .mision-right {
   width: 500px;
   display: flex;
@@ -286,21 +304,11 @@ footer {
   align-items: center;
 }
 
-.vision-left {
-  width: 500px;
-  padding: 10px;
-}
-
 .vision-right {
   width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.valores-left {
-  width: 500px;
-  padding: 10px;
 }
 
 .valores-right {
@@ -311,33 +319,20 @@ footer {
 }
 
 /*** Inicio Proyectos ***/
-.diseno {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+.project-title {
+  color: #fde8e9;
+  background-color: #655455;
+  margin-bottom: 5px;
 }
 
-.planificacion {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.construcciones {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.control-calidad {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+.project-content {
+  color: #fde8e9;
+  background-color: #655455;
 }
 
 /*** Desarrollos inmobiliarios***/
 .galeria {
-  padding: 10px;
+  padding: 40px;
 }
 
 .galeria img {
@@ -385,7 +380,7 @@ footer {
 }
 
 .galeria-info {
-  padding: 8px;
+  padding: 5px;
 }
 
 /***  Fin desarrollos inmobiliarios ***/

@@ -1,35 +1,36 @@
 /*** Desarrollos inmobiliarios***/
+
 .galeria {
-    padding: 10px;
-  }
+    padding: 40px;
+}
   
-  .galeria img {
+.galeria img {
     width: 350px;
     height: 350px;
     object-fit: cover;
     border-radius: 7px;
     @include box-shadow;
-  }
+}
   
-  .galeria-comercial {
+.galeria-comercial {
     @include display-grid;
-  }
+}
   
-  .galeria-industrial {
+.galeria-industrial {
     @include display-grid;
-    }
+}
   
-  .galeria-residencial {
+.galeria-residencial {
     @include display-grid;
-    }
+}
   
-  .galeria-multimedia {
+.galeria-multimedia {
     @include display-grid;
-    }
+}
   
-  .galeria-info {
-    padding: 8px;
-  }
+.galeria-info {
+    padding: 5px;
+}
   
   /***  Fin desarrollos inmobiliarios ***/
   

@@ -8,8 +8,7 @@
 }
 
 .mision-left {
-  width: 500px;
-  padding: 10px;
+  @extend .us-left;
 
 }
 
@@ -18,8 +17,7 @@
 }
 
 .vision-left {
-  width: 500px;
-  padding: 10px;
+  @extend .us-left;
 }
 
 .vision-right {
@@ -27,8 +25,7 @@
 }
 
 .valores-left {
-  width: 500px;
-  padding: 10px;
+  @extend .us-left;
 }
 
 .valores-right {

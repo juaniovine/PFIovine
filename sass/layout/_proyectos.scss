@@ -1,26 +1,77 @@
 /*** Inicio Proyectos ***/
 
+.project-title {
+    color: $project-box-text-color;
+    background-color: #655455;
+    margin-bottom: 5px;
+}
+
+.project-content {
+    color: $project-box-text-color;
+    background-color: #655455;
+}
+
 .diseno {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-
+    @extend .project-text;
+    &01 {
+        @extend .project-box;
+    }
+    &02 {
+        @extend .project-box;
+    }
+    &03 {
+        @extend .project-box;
+    }
+    &04 {
+        @extend .project-box;
+    }
 }
+
+
 .planificacion {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-
+    @extend .project-text;
+    &01 {
+        @extend .project-box;
+    }
+    &02 {
+        @extend .project-box;
+    }
+    &03 {
+        @extend .project-box;
+    }
+    &04 {
+        @extend .project-box;
+    }
 }
+
 .construcciones {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-
+    @extend .project-text;
+    &01 {
+        @extend .project-box;
+    }
+    &02 {
+        @extend .project-box;
+    }
+    &03 {
+        @extend .project-box;
+    }
+    &04 {
+        @extend .project-box;
+    }
 }
-.control-calidad {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
 
+.control-calidad {
+    @extend .project-text;
+    &01 {
+        @extend .project-box;
+    }
+    &02 {
+        @extend .project-box;
+    }
+    &03 {
+        @extend .project-box;
+    }
+    &04 {
+        @extend .project-box;
+    }
 }
