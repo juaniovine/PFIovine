@@ -7,9 +7,35 @@
   padding: 30px;
 }
 
+.nosotros-title {
+  color: $nosotros-box-text-color;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nosotros-content {
+  color: $nosotros-box-text-color;
+  text-align: justify;
+  margin-bottom: 45px;
+  overflow: hidden;
+    transition: 0.6s;
+    &:hover{
+      transform: scale(1.05);
+    }
+}
+
+.nosotros-box-head {
+  color: $nosotros-box-text-color;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
 .mision-left {
   @extend .us-left;
-
+  @extend .nosotros-box;
 }
 
 .mision-right {
@@ -18,6 +44,7 @@
 
 .vision-left {
   @extend .us-left;
+  @extend .nosotros-box;
 }
 
 .vision-right {
@@ -26,6 +53,7 @@
 
 .valores-left {
   @extend .us-left;
+  @extend .nosotros-box;
 }
 
 .valores-right {

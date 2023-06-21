@@ -82,13 +82,14 @@ header {
 .project-box, .control-calidad04, .control-calidad03, .control-calidad02, .control-calidad01, .construcciones04, .construcciones03, .construcciones02, .construcciones01, .planificacion04, .planificacion03, .planificacion02, .planificacion01, .diseno04, .diseno03, .diseno02, .diseno01 {
   width: 450px;
   height: auto;
-  background-color: #007671;
+  background-color: rgba(14, 145, 139, 0.8235294118);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 25px;
   margin: 25px;
+  border-radius: 10px;
 }
 
 .project-text, .control-calidad, .construcciones, .planificacion, .diseno {
@@ -96,6 +97,19 @@ header {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.nosotros-box, .valores-left, .vision-left, .mision-left {
+  width: 450px;
+  height: auto;
+  background-color: #a8847c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 /* menu de navegacion */
@@ -163,9 +177,16 @@ footer {
 .main-box {
   border-radius: 2px;
   width: 100%;
-  background-image: linear-gradient(to bottom, #d1bbbb, #dcc5c7, #e6cfd3, #f0d9df, #e5cfd9);
+  background-image: linear-gradient(to bottom, #d1bbbb, hsl(355, 25%, 82%), #e6cfd3, #f0d9df, #e5cfd9);
   margin-top: 169px;
   padding: 20px;
+}
+
+.index-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
 }
 
 /*** Index con FLEXBOX ***/
@@ -325,6 +346,31 @@ footer {
   padding: 30px;
 }
 
+.nosotros-title {
+  color: #fde8e9;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nosotros-content {
+  color: #fde8e9;
+  text-align: justify;
+  margin-bottom: 45px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.nosotros-content:hover {
+  transform: scale(1.05);
+}
+
+.nosotros-box-head {
+  color: #fde8e9;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .mision-right {
   width: 500px;
   display: flex;
@@ -348,13 +394,15 @@ footer {
 
 /*** Inicio Proyectos ***/
 .project-title {
-  color: #c0fcf7;
+  color: #daf3f1;
   margin-bottom: 15px;
   font-size: 24px;
+  font-weight: 500;
 }
 
 .project-content {
-  color: #c0fcf7;
+  color: #daf3f1;
+  text-align: justify;
 }
 
 .proyect-category {
@@ -537,6 +585,9 @@ ol, ul {
     color: #fde8e9;
   }
   /*proyectos*/
+  .project-box, .diseno01, .diseno02, .diseno03, .diseno04, .planificacion01, .planificacion02, .planificacion03, .planificacion04, .construcciones01, .construcciones02, .construcciones03, .construcciones04, .control-calidad01, .control-calidad02, .control-calidad03, .control-calidad04 {
+    width: 330px;
+  }
   /*galeria*/
   .justify-content-start {
     font-size: small;

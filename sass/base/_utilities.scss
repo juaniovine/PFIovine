@@ -22,6 +22,7 @@
     align-items: center;
     padding: 25px;
     margin: 25px;
+    border-radius: 10px;
 }
 
 .project-text {
@@ -29,6 +30,19 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+.nosotros-box {
+    width: 450px;
+    height: auto;
+    background-color: $nosotros-box-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 // MIXIN

@@ -4,14 +4,18 @@
 $main-color: #fde8e9;
 
 //background
-$body-bgr-color: linear-gradient(to bottom, #d1bbbb, #dcc5c7, #e6cfd3, #f0d9df, #e5cfd9);
+$body-bgr-color: linear-gradient(to bottom, #d1bbbb, hsl(355, 25%, 82%), #e6cfd3, #f0d9df, #e5cfd9);
 $index-pilares-bgr-color: rgba(216, 183, 196, 0.937);
 
 //index
 $box-gradient: rgba(145, 109, 101, 0.925),rgba(180, 149, 142, 0.925);
 
 //project
-$project-box-color: #007671;
-$project-box-text-color: #c0fcf7;
+$project-box-color: #0e918bd2;
+$project-box-text-color: #daf3f1;
 
-//
+//nosotros
+$nosotros-box-color: #a8847c;
+$nosotros-box-text-color: $main-color;
+$nosotros-box-bg-color:#8b7678;
+
