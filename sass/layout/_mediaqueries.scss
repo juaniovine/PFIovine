@@ -19,15 +19,14 @@
       border-radius: 10px;
       box-shadow: 1px 2px 5px 2px grey;
     }
+
     /*galeria*/
     .galeria-comercial {
-      grid-template-columns: repeat(2,1fr);
-      
+      grid-template-columns: repeat(2,1fr);     
     }
 
     .galeria-industrial {
       grid-template-columns: repeat(2,1fr);
-
     }
 
     .galeria-residencial {
@@ -41,9 +40,6 @@
     }
 }
 
-
-
-
 /*  mobile  */
 @media only screen and  (max-width: 480px)
 {
@@ -54,6 +50,7 @@
   .main-box {
     margin-top: 114px;
   }
+
   /*index*/
   .grid-index {
     display: flex;
@@ -70,21 +67,9 @@
    background-color: #a8847c;
    color:#fde8e9;
   }
+  
   /*proyectos*/
-  .diseno {
-    &01 {
-        transform: translateX(0%);
-    }
-    &02 {
-        transform: translateX(0%);
-    }
-    &03 {
-        transform: translateX(0%);
-    }
-    &04 {
-        transform: translateX(0%);
-    }
-}
+
   /*galeria*/
   .justify-content-start {
     font-size: small;

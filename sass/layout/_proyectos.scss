@@ -2,32 +2,34 @@
 
 .project-title {
     color: $project-box-text-color;
-    background-color: #655455;
+    //background-color: #655455;
     margin-bottom: 15px;
+    font-size: 24px;
 }
 
 .project-content {
     color: $project-box-text-color;
-    background-color: #655455;
+}
+
+.proyect-category {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px
 }
 
 .diseno {
     @extend .project-text;
     &01 {
         @extend .project-box;
-        transform: translateX(-50%);
     }
     &02 {
         @extend .project-box;
-        transform: translateX(50%);
     }
     &03 {
         @extend .project-box;
-        transform: translateX(-50%);
     }
     &04 {
         @extend .project-box;
-        transform: translateX(50%);
     }
 }
 

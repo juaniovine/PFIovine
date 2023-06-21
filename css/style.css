@@ -33,6 +33,15 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 160px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /*** configuracion de imagenes ***/
 img {
   display: block;
@@ -61,15 +70,19 @@ header {
   z-index: 10;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 10s;
+}
+
 .us-left, .valores-left, .vision-left, .mision-left {
   width: 500px;
   padding: 10px;
 }
 
 .project-box, .control-calidad04, .control-calidad03, .control-calidad02, .control-calidad01, .construcciones04, .construcciones03, .construcciones02, .construcciones01, .planificacion04, .planificacion03, .planificacion02, .planificacion01, .diseno04, .diseno03, .diseno02, .diseno01 {
-  width: 350px;
+  width: 450px;
   height: auto;
-  background-color: #392a2b;
+  background-color: #007671;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,9 +161,9 @@ footer {
 }
 
 .main-box {
-  border-radius: 10px;
+  border-radius: 2px;
   width: 100%;
-  background-color: #fde8e9;
+  background-image: linear-gradient(to bottom, #d1bbbb, #dcc5c7, #e6cfd3, #f0d9df, #e5cfd9);
   margin-top: 169px;
   padding: 20px;
 }
@@ -199,6 +212,11 @@ footer {
   color: #fde8e9;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.top-right:hover {
+  transform: scale(1.1);
 }
 
 .middle-left {
@@ -206,6 +224,11 @@ footer {
   color: #fde8e9;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 2px grey;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.middle-left:hover {
+  transform: scale(1.1);
 }
 
 .middle-right {
@@ -227,7 +250,7 @@ footer {
   align-items: center;
   gap: 20px;
   height: 33dvh;
-  background-color: rgba(228, 202, 212, 0.937254902);
+  background-color: rgba(216, 183, 196, 0.937);
   padding: 50px;
   margin-top: 40px;
   border-radius: 7px;
@@ -325,27 +348,19 @@ footer {
 
 /*** Inicio Proyectos ***/
 .project-title {
-  color: #fde8e9;
-  background-color: #655455;
+  color: #c0fcf7;
   margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .project-content {
-  color: #fde8e9;
-  background-color: #655455;
+  color: #c0fcf7;
 }
 
-.diseno01 {
-  transform: translateX(-50%);
-}
-.diseno02 {
-  transform: translateX(50%);
-}
-.diseno03 {
-  transform: translateX(-50%);
-}
-.diseno04 {
-  transform: translateX(50%);
+.proyect-category {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
 }
 
 /*** Desarrollos inmobiliarios***/
@@ -522,18 +537,6 @@ ol, ul {
     color: #fde8e9;
   }
   /*proyectos*/
-  .diseno01 {
-    transform: translateX(0%);
-  }
-  .diseno02 {
-    transform: translateX(0%);
-  }
-  .diseno03 {
-    transform: translateX(0%);
-  }
-  .diseno04 {
-    transform: translateX(0%);
-  }
   /*galeria*/
   .justify-content-start {
     font-size: small;
@@ -562,49 +565,6 @@ ol, ul {
     justify-content: center;
   }
   /*contacto*/
-}
-.diseno01 {
-  animation-name: animation-left;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-}
-.diseno02 {
-  animation-name: animation-right;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-}
-.diseno03 {
-  animation-name: animation-left;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 3s;
-}
-.diseno04 {
-  animation-name: animation-right;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 3s;
-}
-
-@keyframes animation-left {
-  0% {
-    transform: translateX(-150%);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animation-right {
-  0% {
-    transform: translateX(150%);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
