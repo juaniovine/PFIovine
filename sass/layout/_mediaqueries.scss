@@ -162,12 +162,30 @@
 
   .galeria-info {
     font-size: small;
+    transform: translateY(190%);
+    background: $desarrollos-content-bgr-color;
+    border-radius: 5px;
+    transition-delay: 0.2s;
   }
 
-  .galeria-comercial {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .galeria-content05 .galeria-info {
+    transform: translateY(240%);
+  }
+
+  .galeria-content07 .galeria-info {
+    transform: translateY(160%);
+  }
+
+  .galeria-content08 .galeria-info {
+    transform: translateY(195%);
+  }
+
+  .galeria-content09 .galeria-info {
+    transform: translateY(195%);
+  }
+
+  .galeria-content11 .galeria-info {
+    transform: translateY(240%);
   }
 
   .galeria-comercial {
@@ -189,8 +207,8 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+}
   /*contacto*/
 
 
-}
+
