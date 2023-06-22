@@ -16,7 +16,11 @@
 .proyect-category {
     display: flex;
     justify-content: center;
-    margin-top: 85px
+    margin-top: 85px;
+    h2 {
+        color: $project-h2-color;
+        font-size: 44px;
+    }
 }
 
 .diseno {

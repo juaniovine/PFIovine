@@ -2,6 +2,9 @@
 
 .galeria {
     padding: 40px;
+    h2 {
+        color: $title-color;
+    }
 }
   
 .galeria img {
@@ -14,6 +17,9 @@
   
 .galeria-comercial {
     @include display-grid;
+    .galeria-box {
+
+    }
 }
   
 .galeria-industrial {

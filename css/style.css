@@ -82,7 +82,7 @@ header {
 .project-box, .control-calidad04, .control-calidad03, .control-calidad02, .control-calidad01, .construcciones04, .construcciones03, .construcciones02, .construcciones01, .planificacion04, .planificacion03, .planificacion02, .planificacion01, .diseno04, .diseno03, .diseno02, .diseno01 {
   width: 450px;
   height: auto;
-  background-color: rgba(14, 145, 139, 0.8235294118);
+  background-color: #a8847c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,6 +187,8 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 36px;
+  font-weight: 600;
+  color: #77554e;
 }
 
 /*** Index con FLEXBOX ***/
@@ -394,14 +396,14 @@ footer {
 
 /*** Inicio Proyectos ***/
 .project-title {
-  color: #daf3f1;
+  color: #fde8e9;
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 500;
 }
 
 .project-content {
-  color: #daf3f1;
+  color: #fde8e9;
   text-align: justify;
 }
 
@@ -410,10 +412,17 @@ footer {
   justify-content: center;
   margin-top: 85px;
 }
+.proyect-category h2 {
+  color: #77554e;
+  font-size: 44px;
+}
 
 /*** Desarrollos inmobiliarios***/
 .galeria {
   padding: 40px;
+}
+.galeria h2 {
+  color: #77554e;
 }
 
 .galeria img {
@@ -432,7 +441,6 @@ footer {
   justify-items: center;
   align-items: center;
 }
-
 .galeria-industrial {
   display: grid;
   gap: 20px;
