@@ -4,6 +4,7 @@
     padding: 40px;
     h2 {
         color: $title-color;
+        margin-top: 40px;
     }
 }
   
@@ -12,14 +13,11 @@
     height: 350px;
     object-fit: cover;
     border-radius: 7px;
-    @include box-shadow;
+    @include box-galery-shadow;
 }
   
 .galeria-comercial {
     @include display-grid;
-    .galeria-box {
-
-    }
 }
   
 .galeria-industrial {
@@ -37,6 +35,131 @@
 .galeria-info {
     padding: 5px;
 }
+
+.galeria-box {
+    max-width: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    transition: transform 0.7s;
+    border-radius: 10px;
+    @include box-galery-shadow;
+}
+
+.galeria-box:hover {
+    transform: scale(1.05);
+    transition-delay: 0.1s;
+    .galeria-info {
+        transform: translateY(210%);
+        background: $desarrollos-content-bgr-color;
+        border-radius: 5px;
+        transition-delay: 0.2s;
+    }
+    .galeria-title {
+        background: $desarrollos-content-bgr-color;
+        border-radius: 5px;
+    }
+}
+
+.galeria-content {
+    padding: 10px;
+    background: linear-gradient(to bottom, $desarrollos-box-bgr-color, $desarrollos-box-bgr-gradient);
+    border-radius: 10px;
+    &01 {
+        background-image: url(../../assets/comercial/local01.jpg);
+        @include galery-box;
+    }
+    &02 {
+        background-image: url(../../assets/comercial/local02.jpg);
+        @include galery-box;
+    }
+    &03 {
+        background-image: url(../../assets/comercial/local03.jpg);
+        @include galery-box;
+    }
+    &04 {
+        background-image: url(../../assets/industrial/industria-peugeot01.jpg);
+        @include galery-box;
+    }
+    &05 {
+        background-image: url(../../assets/industrial/industria-peugeot02.jpg);
+        @include galery-box;
+    }
+    &06 {
+        background-image: url(../../assets/industrial/industria03.jpg);
+        @include galery-box;
+    }
+    &07 {
+        background-image: url(../../assets/residencial/casa01.jpg);
+        @include galery-box;
+        .galeria-info {
+            transform: translateY(240%);
+            transition: transform 0.7s ease;
+        }
+        .galeria-info:hover {
+            transform: translateY(165%);
+        }
+    }
+    &08 {
+        background-image: url(../../assets/residencial/casa02.jpg);
+        @include galery-box;
+        .galeria-info {
+            transform: translateY(240%);
+            transition: transform 0.7s ease;
+        }
+        .galeria-info:hover {
+            transform: translateY(165%);
+        }
+    }
+    &09 {
+        background-image: url(../../assets/residencial/casa03.jpg);
+        @include galery-box;
+        .galeria-info {
+            transform: translateY(240%);
+            transition: transform 0.7s ease;
+        }
+        .galeria-info:hover {
+            transform: translateY(165%);
+        }
+    }
+    &10 {
+        background-image: url(../../assets/residencial/edificio01.jpg);
+        @include galery-box;
+    }
+    &11 {
+        background-image: url(../../assets/residencial/edificio02.jpg);
+        @include galery-box;
+    }
+    &12 {
+        background-image: url(../../assets/residencial/edificio03.jpg);
+        @include galery-box;
+    }
+}
+
+
+.galeria-info {
+    transform: translateY(280%);
+    transition: transform 0.7s ease;    
+}
+
+.galeria-title {
+    color: $main-color;
+    position: relative;
+    background: $desarrollos-content-bgr-color;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.galeria-body {
+    color: $main-color;
+}
+
+span {
+    color: $main-color;
+}
+
   
   /***  Fin desarrollos inmobiliarios ***/
   

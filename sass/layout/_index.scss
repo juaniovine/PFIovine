@@ -6,14 +6,12 @@
       font-size: 36px;
       font-weight: 600;
       color: $title-color;
+      height: 10dvh;
 }
 
   
 /*** Index con FLEXBOX ***/
-.index-title {
-    height: 10dvh;
-  }
-  
+ 
   .flex-index {
     display: flex;
     flex-wrap: wrap;

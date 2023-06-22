@@ -46,7 +46,7 @@
 }
 
 // MIXIN
-
+//index
 @mixin display-grid {
     display: grid;
     gap: 20px;
@@ -65,6 +65,7 @@
     height: 320px;
 }
 
+//nosotros
 @mixin us-right {
     width: 500px;
     display: flex;
@@ -72,6 +73,21 @@
     align-items: center;
 }
 
+//desarrollos
+@mixin galery-box{
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    padding: 10px 0 0;
+    border-radius: 10px;
+    @include box-galery-shadow;
+}
+
+//generales
 @mixin box-shadow {
     box-shadow: 1px 2px 5px 2px grey;
+}
+
+@mixin box-galery-shadow {
+    box-shadow: 1px 2px 5px 2px #a8847c;
 }

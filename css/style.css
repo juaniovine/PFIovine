@@ -189,13 +189,10 @@ footer {
   font-size: 36px;
   font-weight: 600;
   color: #77554e;
-}
-
-/*** Index con FLEXBOX ***/
-.index-title {
   height: 10dvh;
 }
 
+/*** Index con FLEXBOX ***/
 .flex-index {
   display: flex;
   flex-wrap: wrap;
@@ -423,6 +420,7 @@ footer {
 }
 .galeria h2 {
   color: #77554e;
+  margin-top: 40px;
 }
 
 .galeria img {
@@ -430,7 +428,7 @@ footer {
   height: 350px;
   object-fit: cover;
   border-radius: 7px;
-  box-shadow: 1px 2px 5px 2px grey;
+  box-shadow: 1px 2px 5px 2px #a8847c;
 }
 
 .galeria-comercial {
@@ -441,6 +439,7 @@ footer {
   justify-items: center;
   align-items: center;
 }
+
 .galeria-industrial {
   display: grid;
   gap: 20px;
@@ -470,6 +469,189 @@ footer {
 
 .galeria-info {
   padding: 5px;
+}
+
+.galeria-box {
+  max-width: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  transition: transform 0.7s;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+
+.galeria-box:hover {
+  transform: scale(1.05);
+  transition-delay: 0.1s;
+}
+.galeria-box:hover .galeria-info {
+  transform: translateY(210%);
+  background: rgba(109, 80, 75, 0.82);
+  border-radius: 5px;
+  transition-delay: 0.2s;
+}
+.galeria-box:hover .galeria-title {
+  background: rgba(109, 80, 75, 0.82);
+  border-radius: 5px;
+}
+
+.galeria-content {
+  padding: 10px;
+  background: linear-gradient(to bottom, hsl(10, 21%, 39%), hsl(10, 21%, 59.0909090909%));
+  border-radius: 10px;
+}
+.galeria-content01 {
+  background-image: url(../../assets/comercial/local01.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content02 {
+  background-image: url(../../assets/comercial/local02.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content03 {
+  background-image: url(../../assets/comercial/local03.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content04 {
+  background-image: url(../../assets/industrial/industria-peugeot01.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content05 {
+  background-image: url(../../assets/industrial/industria-peugeot02.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content06 {
+  background-image: url(../../assets/industrial/industria03.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content07 {
+  background-image: url(../../assets/residencial/casa01.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content07 .galeria-info {
+  transform: translateY(240%);
+  transition: transform 0.7s ease;
+}
+.galeria-content07 .galeria-info:hover {
+  transform: translateY(165%);
+}
+.galeria-content08 {
+  background-image: url(../../assets/residencial/casa02.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content08 .galeria-info {
+  transform: translateY(240%);
+  transition: transform 0.7s ease;
+}
+.galeria-content08 .galeria-info:hover {
+  transform: translateY(165%);
+}
+.galeria-content09 {
+  background-image: url(../../assets/residencial/casa03.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content09 .galeria-info {
+  transform: translateY(240%);
+  transition: transform 0.7s ease;
+}
+.galeria-content09 .galeria-info:hover {
+  transform: translateY(165%);
+}
+.galeria-content10 {
+  background-image: url(../../assets/residencial/edificio01.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content11 {
+  background-image: url(../../assets/residencial/edificio02.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+.galeria-content12 {
+  background-image: url(../../assets/residencial/edificio03.jpg);
+  width: 350px;
+  height: 450px;
+  background-size: cover;
+  padding: 10px 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px #a8847c;
+}
+
+.galeria-info {
+  transform: translateY(280%);
+  transition: transform 0.7s ease;
+}
+
+.galeria-title {
+  color: #fde8e9;
+  position: relative;
+  background: rgba(109, 80, 75, 0.82);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.galeria-body {
+  color: #fde8e9;
+}
+
+span {
+  color: #fde8e9;
 }
 
 /***  Fin desarrollos inmobiliarios ***/
@@ -542,7 +724,15 @@ ol, ul {
   .flex-box {
     width: 360px;
   }
+  .main-box p {
+    font-size: 18px;
+    padding: 10px;
+  }
   /*index*/
+  .index-title {
+    font-size: 34px;
+    text-align: center;
+  }
   .grid-index {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -569,6 +759,35 @@ ol, ul {
     grid-template-rows: repeat(1, 1fr);
   }
 }
+@media only screen and (max-width: 660px) {
+  /*galeria*/
+  .justify-content-start {
+    font-size: small;
+  }
+  .galeria-picture img {
+    width: 100%;
+  }
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galeria-industrial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galeria-residencial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /*  mobile  */
 @media only screen and (max-width: 480px) {
   /*estilos generales*/
@@ -576,12 +795,32 @@ ol, ul {
     width: 65%;
   }
   .main-box {
-    margin-top: 114px;
+    margin-top: 113px;
+  }
+  .main-box p {
+    font-size: 16px;
+    padding: 10px;
   }
   /*index*/
+  .index-title {
+    font-size: 30px;
+  }
   .grid-index {
     display: flex;
     flex-direction: column;
+  }
+  .index-pilares {
+    flex-direction: column;
+    gap: 15px;
+    height: 80dvh;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .index-pilares p {
+    text-align: center;
+  }
+  .index-pilares img {
+    width: 30%;
   }
   .grid-contact {
     display: flex;
@@ -596,12 +835,18 @@ ol, ul {
   .project-box, .diseno01, .diseno02, .diseno03, .diseno04, .planificacion01, .planificacion02, .planificacion03, .planificacion04, .construcciones01, .construcciones02, .construcciones03, .construcciones04, .control-calidad01, .control-calidad02, .control-calidad03, .control-calidad04 {
     width: 330px;
   }
-  /*galeria*/
+  .project-content {
+    text-align: center;
+  }
+  /*  desarollos  */
   .justify-content-start {
     font-size: small;
   }
   .galeria-picture img {
     width: 100%;
+  }
+  .galeria-info {
+    font-size: small;
   }
   .galeria-comercial {
     display: flex;

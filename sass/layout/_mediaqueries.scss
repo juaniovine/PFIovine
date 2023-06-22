@@ -7,8 +7,17 @@
     .flex-box {
       width: 360px;
     }
-    
+    .main-box {
+      p {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
      /*index*/
+     .index-title {
+      font-size: 34px;
+      text-align: center;
+    }
     .grid-index {
       grid-template-columns: repeat(2,1fr);
     }
@@ -40,39 +49,8 @@
     }
 }
 
-/*  mobile  */
-@media only screen and  (max-width: 480px)
+@media only screen and  (max-width: 660px)
 {
-  /*estilos generales*/
-  header img {
-    width: 65%;
-  }
-  .main-box {
-    margin-top: 114px;
-  }
-
-  /*index*/
-  .grid-index {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .grid-contact {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /*nosotros*/
-  .vision-left {
-   background-color: #a8847c;
-   color:#fde8e9;
-  }
-  
-  /*proyectos*/
-  .project-box {
-    width: 330px;
-}
-
   /*galeria*/
   .justify-content-start {
     font-size: small;
@@ -108,9 +86,111 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
 
+
+/*  mobile  */
+@media only screen and  (max-width: 480px)
+{
+  /*estilos generales*/
+  header img {
+    width: 65%;
+  }
+  .main-box {
+    margin-top: 113px;
+  }
+  .main-box {
+    p {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  /*index*/
+
+  .index-title {
+    font-size: 30px;
+  }
+
+  .grid-index {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-pilares {
+    flex-direction: column;
+    gap: 15px;
+    height: 80dvh;
+    padding: 20px;
+    margin-top: 30px;
+    p {
+      text-align: center;
+    }
+  }
+  
+  .index-pilares img {
+    width: 30%;
+  }
+
+  .grid-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*nosotros*/
+  .vision-left {
+   background-color: #a8847c;
+   color:#fde8e9;
+  }
+  
+  /*proyectos*/
+  .project-box {
+    width: 330px;
+  }
+
+  .project-content {
+    text-align: center;
+  }
+
+  /*  desarollos  */
+  .justify-content-start {
+    font-size: small;
+  }
+
+  .galeria-picture img {
+    width: 100%;
+  }
+
+  .galeria-info {
+    font-size: small;
+  }
+
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .galeria-comercial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .galeria-industrial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .galeria-residencial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   /*contacto*/
-
 
 
 }
