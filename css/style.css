@@ -54,10 +54,6 @@ h1 {
   text-align: center;
 }
 
-h5 {
-  font-size: medium;
-}
-
 p {
   font-family: "Inter";
 }
@@ -494,7 +490,7 @@ footer {
   transition-delay: 0.2s;
 }
 .galeria-box:hover .galeria-title {
-  background: rgba(109, 80, 75, 0.82);
+  background: rgba(109, 80, 75, 0.01);
   border-radius: 5px;
 }
 
